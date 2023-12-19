@@ -54,13 +54,13 @@ saml.session_duration = 28800
 
 The following input parameters are required:
 
--input_file: a local path to a text file that contains a list of gcp objects that you want to copy. This can be generated using the `gsutil ls` command. Example: `/home/jupyter/commit/smalltest.txt`
+-input_file: a local path to a text file that contains a list of gcp objects that you want to copy. This can be generated using the `gsutil ls` command. Example: `"/home/jupyter/commit/smalltest.txt"`
 
--s3_prefix: a prefix that will define the path that objects will be copied to on your S3 bucket. Example: `rnaseq_cram` 
+-s3_prefix: a prefix that will define the path that objects will be copied to on your S3 bucket. Example: `"rnaseq_cram"` 
 
--s3_bucket: The name of the S3 bucket that you are copying data to. Example: `strides-ampad-project-tower-bucket`
+-s3_bucket: The name of the S3 bucket that you are copying data to. Example: `"strides-ampad-project-tower-bucket"`
 
--gcs_project: the GCS project ID for your Terra instance. This can be found by running `export $GOOGLE_PROJECT` on your Terra instance. Example: `terra-a9763d`
+-gcs_project: the GCS project ID for your Terra instance. This can be found by running `export $GOOGLE_PROJECT` on your Terra instance. Example: `"terra-a9763d"`
 
 
 **Special Considerations**
