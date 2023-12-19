@@ -11,7 +11,7 @@ def copy_gcs_to_s3(gcs_bucket, gcs_blob, s3_bucket, s3_blob, project=""):
 
     blob = bucket.blob(gcs_blob)
     data = io.BytesIO()
-    blob.download_to_file(data)
+    blob.download_to_file(data,raw_download=True)
     data.seek(0)
 
     print("Uploaded gs://" + gcs_bucket + "/" + gcs_blob + " to s3://" + s3_bucket + "/" + s3_blob)
