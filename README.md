@@ -8,7 +8,8 @@ Functions and documentation for copying data from the Terra GCP platform to AWS
 
 - Python3 is required to run this script, which should come pre-installed on your Terra Instance.
 
-- In addition, you must configure your AWS credentials by installing the [aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)  
+- In addition, you must configure your AWS credentials by installing the [aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). 
+  
 Terra instances do not grant you sudo privlidges, so please follow the instructions for installing without sudo(making sure to change these paths to locations you have access to on your instance):
 ```
 $ ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
